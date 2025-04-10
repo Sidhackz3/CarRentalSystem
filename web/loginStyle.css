@@ -1,0 +1,120 @@
+/* Import a Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    color: #fdfdfd;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background Image Slideshow with Gradient Overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+    animation: changeBackground 15s infinite;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.6) 100%);
+    z-index: -1;
+}
+
+/* Background Image Animation */
+@keyframes changeBackground {
+    0%   { background-image: url('images/Icar1.png'); }
+    33%  { background-image: url('images/Icar2.png'); }
+    66%  { background-image: url('images/Icar3.jpg'); }
+    100% { background-image: url('images/Icar1.png'); }
+}
+
+/* Page Heading */
+h2 {
+    margin-top: 40px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 10px 20px;
+    border-bottom: 3px solid #ff5733;
+}
+
+/* Form Styling */
+form {
+    background: rgba(0, 0, 0, 0.6);
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+}
+
+form input::placeholder {
+    color: #aaa;
+}
+
+form button {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.4s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    margin-top: 15px;
+}
+
+form button:hover {
+    background-color: #e14d2a;
+    transform: scale(1.05);
+}
+
+/* Message Styling */
+p {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2em;
+    }
+    form {
+        margin: 20px;
+        padding: 20px;
+    }
+}

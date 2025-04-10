@@ -1,0 +1,223 @@
+/* Importing Modern Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+/* --- HEADER SECTION --- */
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.5);
+}
+
+/* --- DASHBOARD CONTAINER --- */
+.dashboard-container {
+    width: 90%;
+    max-width: 1100px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    animation: slideUp 1.2s ease-in-out;
+}
+
+/* --- USER INFO BOX --- */
+.user-info {
+    width: 100%;
+    text-align: center;
+    padding: 18px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.3),
+                inset -4px -4px 6px rgba(255, 255, 255, 0.2);
+}
+
+/* --- 3D GLASSMORPHIC CARDS --- */
+.card {
+    width: 320px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Neon Glow Effect on Hover */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 18px rgba(0, 255, 255, 0.6);
+    border: 2px solid rgba(0, 255, 255, 0.6);
+}
+
+/* --- ADVANCED BUTTON STYLES --- */
+button {
+    background: linear-gradient(135deg, #32CD32, #008000); /* Lime Green to Dark Green */
+    border: none;
+    padding: 12px 22px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(50, 205, 50, 0.3); /* Light Green Shadow */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(135deg, #008000, #32CD32); /* Dark Green to Lime Green */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(50, 205, 50, 0.8); /* Bright Green Glow */
+}
+
+
+/* --- TABLE STYLING --- */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+    background: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Hover Effect on Rows */
+tr:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+/* --- FOOTER SECTION --- */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* --- LOGOUT BUTTON STYLING --- */
+.logout-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 12px rgba(255, 75, 75, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+/* 🔥 Neon Glow Effect */
+.logout-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease-in-out;
+}
+
+/* 🚀 Hover Effect */
+.logout-btn:hover {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 75, 75, 0.8);
+}
+
+/* 🔥 Glowing Effect */
+.logout-btn:hover::before {
+    left: 100%;
+}
+
+/* 🎭 Active Click Effect */
+.logout-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(255, 75, 75, 0.6);
+}
+
+/* --- ANIMATIONS --- */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    color: #fdfdfd;
+    text-align: center;
+    min-height: 100vh;
+    background: #000; 
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-bottom: 3px solid #ff5733;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+header h2 {
+    margin: 5px 0 0;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.content {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: calc(100% - 30px);
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+}
+
+form button {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.4s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+form button:hover {
+    background-color: #e14d2a;
+    transform: scale(1.05);
+}
+
+/* Table Container with Scroll */
+.table-container {
+    width: 100%;
+    max-height: 400px; /* Adjust height */
+    overflow-x: auto;
+    overflow-y: auto;
+    border: 1px solid #ffffff;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 1em;
+}
+
+table th {
+    background-color: #ff5733;
+    color: #fff;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-top: 3px solid #ff5733;
+}
+
+footer a {
+    color: #ff5733;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #e14d2a;
+}
